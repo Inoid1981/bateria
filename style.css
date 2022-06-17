@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    
+     
+    
+  }
+
+main {background-color: brown;
+    /* background-image: url("https://fondosmil.com/fondo/27094.jpg"); */
+   
+}
+h1, h2{font-family: 'Rock salt', cursive, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+
+img {
+ 
+}
+div {
+    border: 1px solid blue;
+    width: 75px;
+    height: 50px;
+    margin: 0.5rem;
+    
+}
