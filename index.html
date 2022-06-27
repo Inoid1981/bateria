@@ -11,47 +11,51 @@
 <body>
     
     <main>
+        <header>
         <h1>
             Toca la batería
         </h1>
-        <h2>Puedes hacer click en la batería</h2>
-        <h2>También puedes pulsar las teclas........ </h2>
-        <img src="/recursos/bateria.png" alt="imagen de una batería">
-   </main> 
-   <aside>
-    <div id = "Platillo"><button onclick="platillo.play()">Platillo</button>
-     <!--    <audio src="/recursos/sounds/crash.wav"></audio> -->
+        <h2>Puedes hacer click en los botones</h2>
+        <h2>También puedes pulsar Q, W, E, R, T, Y, U, I, O </h2>
+        
+ <img id="imagen" src="/recursos/bateria.png" alt="imagen de una batería"></header>
+<aside id="primero">
+    
+    <div id = "crashwav"><button>Platillo</button>
+        <audio src="/recursos/sounds/crash.wav"></audio>
     </div>
 
-    <div id= "Caja1"><button onclick ="caja1.play()">Caja 1</button>
-        <audio src="/recursos/sounds/tom-high.wav"></audio>
-    </div>
-
-    <div id= "Caja2"><button>Caja 2</button>
+    <div id= "tomlowwav"><button>Caja 1</button>
         <audio src="/recursos/sounds/tom-low.wav"></audio>
     </div>
 
-    <div id= "Bombo"><button>Bombo</button>
-        <audio src="/recursos/sounds/kick.wav"></audio>
-    </div>
-
-    <div id= "Caja3"><button>Caja3</button>
+    <div id= "tommidwav"><button>Caja 2</button>
         <audio src="/recursos/sounds/tom-mid.wav"></audio>
     </div>
 
-    <div id= "Caja4"><button>Caja 4</button>
-        <audio  src="/recursos/sounds/snare.wav"></audio>
+    <div id= "kickwav"><button>Bombo</button>
+        <audio src="/recursos/sounds/kick.wav"></audio>
+    </div>
+    </aside>
+<aside id="segundo">
+    <div id= "tomhighwav"><button>Caja 3</button>
+        <audio src="/recursos/sounds/tom-high.wav"></audio>
     </div>
 
-    <div id= "ChastonAbierto"><button>Chaston Abierto</button>
-            <audio  src="/recursos/sounds/hihat-open.wav"></audio>
+    <div id= "snarewav"><button>Caja 4</button>
+        <audio src="/recursos/sounds/snare.wav"></audio>
+    </div>
+
+    <div id= "hihatopenwav"><button>Chaston Abierto</button>
+        <audio src="/recursos/sounds/hihat-open.wav"></audio>
             
     </div>
 
-    <div id = "ChastonCerrado"><button>Chaston Cerrado</button>
-            <audio id = "ChastonCerrado" src="/recursos/sounds/hihat-close.wav"></audio>
+    <div id = "hihatclosewav"><button>Chaston Cerrado</button>
+        <audio src="/recursos/sounds/hihat-close.wav"></audio>
     </div>
 </aside>
+</main>
 <script src="/script.js"></script>
 </body>
 </html>

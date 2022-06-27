@@ -7,46 +7,59 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
   h1, h2{font-family: 'Rock salt', cursive, sans-serif;
     font-style: italic;
     text-align: center;
 }
-  
- /*  body */aside {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100vh;
+  body {
+    height: 100%;
     display: grid;
-    grid-template-columns:repeat(4, 100px) ;
-    grid-template-rows: repeat(4, 100px);
     
   }
 
-main {background-color: brown;
-    /* background-image: url("https://fondosmil.com/fondo/27094.jpg"); */
-   
+  main {background-color:rgba(102, 51, 153, 0.76);
+    height:fit-content;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-areas: "izquierda header derecha"}
+
+    header {
+  grid-area: header;
 }
 
+aside:first-of-type{
+  grid-area:izquierda;
+}
 
+aside:last-of-type{
+  grid-area: derecha;
+}
 
 img {
-  display: block;
-  margin: auto;
+    margin: auto;
+    width: 100%;
 }
-div {
-    border: 1px solid blue;
-    width: 75px;
-    height: 50px;
-    margin: 0.5rem;
-}
+
 button {
   cursor: pointer;
-  background-color: transparent;
-  width: 50px;
+  background-color: rgba(47, 212, 199, 0.664);
+  width: 75px;
   height: 50px;
   border-color: transparent;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 25%;
+  margin-top: 2.5rem;
 }
 
-
+img:hover{
+  animation: tiembla 0.1s ;
+  animation-iteration-count: 2
+}
+@keyframes tiembla{
+  0%  { transform:rotateZ(-5deg); }
+  50% { transform:rotateZ( 0deg) scale(.8); }
+  100%{ transform:rotateZ( 5deg); }
 }
