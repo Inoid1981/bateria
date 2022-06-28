@@ -43,9 +43,9 @@ window.addEventListener("load", function(){
 })
 function sonarHithatclose(){
     sonido.setAttribute("src", "./recursos/sounds/hihat-close.wav");
-    document.body.appendChild(sonido);
-   
+    sonido.play ();
 }
+
 function temporizarHihatclose(){
     setTimeout(sonarHithatclose,1000)
 }
@@ -55,13 +55,14 @@ document.addEventListener("keydown", (e)=>{
     temporizarHihatclose(e)
     } 
 })
+
 //3
 window.addEventListener("load", function(){
     document.querySelector("#hihatopenwav").addEventListener("click", temporizarHithatopen)
 })
 function sonarHithatopen(){
     sonido.setAttribute("src", "./recursos/sounds/hihat-open.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarHithatopen(){
@@ -79,7 +80,7 @@ window.addEventListener("load", function(){
 })
 function sonarKick(){
     sonido.setAttribute("src", "./recursos/sounds/kick.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarKick(){
@@ -97,7 +98,7 @@ window.addEventListener("load", function(){
 })
 function sonarRide(){
     sonido.setAttribute("src", "./recursos/sounds/ride.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
 }
 function temporizarRide(){
     setTimeout(sonarRide,1000)
@@ -115,7 +116,7 @@ window.addEventListener("load", function(){
 })
 function sonarSnare(){
     sonido.setAttribute("src", "./recursos/sounds/snare.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarSnare(){
@@ -133,7 +134,7 @@ window.addEventListener("load", function(){
 })
 function sonarTomhigh(){
     sonido.setAttribute("src", "./recursos/sounds/tom-high.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarTomhigh(){
@@ -151,7 +152,7 @@ window.addEventListener("load", function(){
 })
 function sonarTomlow(){
     sonido.setAttribute("src", "./recursos/sounds/tom-low.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarTomlow(){
@@ -169,7 +170,7 @@ window.addEventListener("load", function(){
 })
 function sonarTommid(){
     sonido.setAttribute("src", "./recursos/sounds/tom-mid.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     
 }
 function temporizarTommid(){
