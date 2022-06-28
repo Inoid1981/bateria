@@ -2,12 +2,12 @@
 
 console.log("hi");
 
-const sonido = document.createElement("iframe");
+const sonido = document.createElement("audio");
+document.body.appendChild(sonido);
 
-
-//elimino imagen del iframe
+/* //elimino imagen del iframe
 sonido.height= "0";
-sonido.width= "0";
+sonido.width= "0"; */
 
 
 
@@ -19,7 +19,7 @@ window.addEventListener("load", function(){
 //añado sonido 
 function sonarCrashWav(){   
     sonido.setAttribute("src", "./recursos/sounds/crash.wav");
-    document.body.appendChild(sonido);
+    sonido.play ();
     }
 
 //Añado retraso 1s
